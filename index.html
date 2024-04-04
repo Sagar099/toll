@@ -1,0 +1,208 @@
+<!-- <!-- <!-- <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css"/>
+</head>
+<body>
+  <div id="loginPage">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div id="trackerPage" style="display: none;">
+    <h1>Track Your Distance Travelled</h1>
+    <p>Click the button to start tracking distance.</p>
+    <button onclick="startTracking()">Start</button>
+    <button onclick="stopTracking()">Stop</button>
+    <p>Distance Travelled: <span id="distanceTravelled">0</span> km</p>
+    <p>Start Coordinates: <span id="startCoordinates">N/A</span></p>
+    <p>Stop Coordinates: <span id="stopCoordinates">N/A</span></p>
+    <div id="map" style="height: 300px;"></div>
+    <p>Vehicle Type:</p>
+    <input type="checkbox" id="carCheckbox" value="car"> Car (50 Rs/km)
+    <input type="checkbox" id="busCheckbox" value="bus"> Bus (60 Rs/km)
+    <input type="checkbox" id="truckCheckbox" value="truck"> Truck (70 Rs/km)
+    <p>Total Price: <span id="totalPrice">0</span> Rs</p>
+  </div>
+
+  <script src="script.js">
+    // Your JavaScript code goes here (integrated from the previous response)
+  </script>
+</body>
+</html> -->
+
+<!-- Without leaflet -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css"/>
+  
+</head>
+<body>
+  <div id="loginPage">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <button type="submit">Login/Register</button>
+    </form>
+  </div>
+
+  <div id="trackerPage" style="display: none;">
+    <h1>Track Your Distance Travelled</h1>
+    <p>Click the button to start tracking distance.</p>
+    <button onclick="startTracking()">Start</button>
+    <button onclick="stopTracking()">Stop</button>
+    <p>Distance Travelled: <span id="distanceTravelled">0</span> km</p>
+    <p>Start Coordinates: <span id="startCoordinates">N/A</span></p>
+    <p>Stop Coordinates: <span id="stopCoordinates">N/A</span></p>
+    <div id="map" style="height: 300px;"></div>
+    
+    
+    <p>Vehicle Type:</p>
+
+    <input type="checkbox" id="carCheckbox" value="car"> Car (50 Rs/km)
+    <input type="checkbox" id="busCheckbox" value="bus"> Bus (60 Rs/km)
+    <input type="checkbox" id="truckCheckbox" value="truck"> Truck (70 Rs/km)
+    <p>Total Price: <span id="totalPrice">0</span> Rs</p>
+  </div>
+
+
+  <script src="script.js">
+    // Your JavaScript code goes here (integrated from the previous response)
+  </script>
+</body>
+</html> -->
+ 
+
+<!-- // final leaflet -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css"/>
+</head>
+<body>
+  <div id="loginPage">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <button type="submit">Login/Register</button>
+    </form>
+  </div>
+
+  <div id="trackerPage" style="display: none;">
+    <h1>Track Your Distance Travelled</h1>
+    <p>Click the button to start tracking distance.</p>
+    <button onclick="startTracking()">Start</button>
+    <button onclick="stopTracking()">Stop</button>
+    <p>Distance Travelled: <span id="distanceTravelled">0</span> km</p>
+    <p>Start Coordinates: <span id="startCoordinates">N/A</span></p>
+    <p>Stop Coordinates: <span id="stopCoordinates">N/A</span></p>
+    <div id="map" style="height: 300px;"></div>
+    
+    
+    <p>Vehicle Type:</p>
+
+    <input type="checkbox" id="carCheckbox" value="car"> Car (50 Rs/km)
+    <input type="checkbox" id="busCheckbox" value="bus"> Bus (60 Rs/km)
+    <input type="checkbox" id="truckCheckbox" value="truck"> Truck (70 Rs/km)
+    <p>Total Price: <span id="totalPrice">0</span> Rs</p>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loginPage">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <button type="submit">Login/Register</button>
+    </form>
+  </div>
+
+  <div id="trackerPage" style="display: none;">
+    <h1>Track Your Distance Travelled</h1>
+    <p>Distance Travelled: <span id="distanceTravelled">0</span> km</p>
+    <p>Start Coordinates: <span id="startCoordinates">N/A</span></p>
+    <p>Stop Coordinates: <span id="stopCoordinates">N/A</span></p>
+    <div id="map" style="height: 300px;"></div>
+    
+    <p>Vehicle Type:</p>
+    <input type="checkbox" id="carCheckbox" value="car"> Car (50 Rs/km)
+    <input type="checkbox" id="busCheckbox" value="bus"> Bus (60 Rs/km)
+    <input type="checkbox" id="truckCheckbox" value="truck"> Truck (70 Rs/km)
+    <p>Total Price: <span id="totalPrice">0</span> Rs</p>
+    <button onclick="toggleTracking()">Toggle Tracking</button>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
